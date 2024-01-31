@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">3</td><td class="num">16,983</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">apitest.apibasis.NeoFeedTest</td><td><a href="#m0">verifyInvalidDateFormat</a></td><td rowspan="1">1706705153509</td><td rowspan="1">1652</td></tr><tr class="failedeven"><td><a href="#m1">verifyUsingValidTestDetails</a></td><td rowspan="2">1706705158368</td><td rowspan="2">1286</td></tr><tr class="failedeven"><td><a href="#m2">verifyUsingValidTestDetails</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">apitest.apibasis.NeoFeedTest</td><td><a href="#m3">verifySwappedStartDateAndEndDate</a></td><td rowspan="1">1706705151685</td><td rowspan="1">1823</td></tr><tr class="passedeven"><td><a href="#m4">verifyUsingInvalidAPIKey</a></td><td rowspan="1">1706705155169</td><td rowspan="1">890</td></tr><tr class="passedeven"><td><a href="#m5">verifyUsingValidStartDateAndEndDate</a></td><td rowspan="1">1706705156982</td><td rowspan="1">1352</td></tr><tr class="passedeven"><td><a href="#m6">verifyWithoutAPIKey</a></td><td rowspan="1">1706705156059</td><td rowspan="1">922</td></tr><tr class="passedeven"><td><a href="#m7">verifyWithoutEndDate</a></td><td rowspan="1">1706705149489</td><td rowspan="1">2196</td></tr><tr class="passedeven"><td><a href="#m8">verifyWithoutStartDate</a></td><td rowspan="1">1706705148417</td><td rowspan="1">1072</td></tr><tr class="passedeven"><td><a href="#m9">verifyWithoutStartDateAndEndDate</a></td><td rowspan="1">1706705144491</td><td rowspan="1">3925</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">apitest.apibasis.NeoFeedTest#verifyInvalidDateFormat</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+JSON path error_message doesn&apos;t match.
+Expected: Date Format Exception - Expected format (yyyy-mm-dd) - Invalid_Date_Format - Unparseable date: \&quot;Invalid_Date_Format\&quot;
+  Actual: Date Format Exception - Expected format (yyyy-mm-dd) - Invalid_Date_Format
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at apitest.apibasis.NeoFeedTest.verifyInvalidDateFormat(NeoFeedTest.java:70)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">apitest.apibasis.NeoFeedTest#verifyUsingValidTestDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testdata.NeoTestDetails@2a140ce5</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.time.LocalDate.year accessible: module java.base does not &quot;opens java.time&quot; to unnamed module @58ceff1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:153)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getFieldAdapter(ReflectiveTypeAdapterFactory.java:135)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.&lt;init&gt;(ReflectiveTypeAdapterFactory.java:105)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:104)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:160)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ArrayTypeAdapter$1.create(ArrayTypeAdapter.java:48)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getFieldAdapter(ReflectiveTypeAdapterFactory.java:135)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.&lt;init&gt;(ReflectiveTypeAdapterFactory.java:105)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:104)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:160)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ArrayTypeAdapter$1.create(ArrayTypeAdapter.java:48)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory.create(MapTypeAdapterFactory.java:126)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getFieldAdapter(ReflectiveTypeAdapterFactory.java:135)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.&lt;init&gt;(ReflectiveTypeAdapterFactory.java:105)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:104)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:160)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.Gson.fromJson(Gson.java:878)
+	at com.google.gson.Gson.fromJson(Gson.java:844)
+	at com.google.gson.Gson.fromJson(Gson.java:793)
+	at com.google.gson.Gson.fromJson(Gson.java:765)
+	at com.google.gson.Gson$fromJson.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+	at io.restassured.internal.path.json.mapping.JsonPathGsonObjectDeserializer.deserialize(JsonPathGsonObjectDeserializer.groovy:35)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.GsonMapper.deserialize(GsonMapper.groovy:39)
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithGson(ObjectMapping.groovy:230)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:149)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:100)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:63)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at apitest.apibasis.NeoFeedTest.verifyUsingValidTestDetails(NeoFeedTest.java:116)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">apitest.apibasis.NeoFeedTest#verifyUsingValidTestDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testdata.NeoTestDetails@db99785</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.time.LocalDate.year accessible: module java.base does not &quot;opens java.time&quot; to unnamed module @58ceff1
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:153)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getFieldAdapter(ReflectiveTypeAdapterFactory.java:135)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.&lt;init&gt;(ReflectiveTypeAdapterFactory.java:105)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:104)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:160)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ArrayTypeAdapter$1.create(ArrayTypeAdapter.java:48)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getFieldAdapter(ReflectiveTypeAdapterFactory.java:135)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.&lt;init&gt;(ReflectiveTypeAdapterFactory.java:105)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:104)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:160)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ArrayTypeAdapter$1.create(ArrayTypeAdapter.java:48)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.MapTypeAdapterFactory.create(MapTypeAdapterFactory.java:126)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getFieldAdapter(ReflectiveTypeAdapterFactory.java:135)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.&lt;init&gt;(ReflectiveTypeAdapterFactory.java:105)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.createBoundField(ReflectiveTypeAdapterFactory.java:104)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.getBoundFields(ReflectiveTypeAdapterFactory.java:160)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.create(ReflectiveTypeAdapterFactory.java:96)
+	at com.google.gson.Gson.getAdapter(Gson.java:416)
+	at com.google.gson.Gson.fromJson(Gson.java:878)
+	at com.google.gson.Gson.fromJson(Gson.java:844)
+	at com.google.gson.Gson.fromJson(Gson.java:793)
+	at com.google.gson.Gson.fromJson(Gson.java:765)
+	at com.google.gson.Gson$fromJson.call(Unknown Source)
+	at io.restassured.internal.path.json.mapping.JsonPathGsonObjectDeserializer.deserialize(JsonPathGsonObjectDeserializer.groovy:35)
+	at io.restassured.path.json.mapping.JsonPathObjectDeserializer$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.GsonMapper.deserialize(GsonMapper.groovy:39)
+	at io.restassured.mapper.ObjectMapper$deserialize.call(Unknown Source)
+	at io.restassured.internal.mapping.ObjectMapping.parseWithGson(ObjectMapping.groovy:230)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:149)
+	at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:100)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:63)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at apitest.apibasis.NeoFeedTest.verifyUsingValidTestDetails(NeoFeedTest.java:116)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">apitest.apibasis.NeoFeedTest#verifySwappedStartDateAndEndDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">apitest.apibasis.NeoFeedTest#verifyUsingInvalidAPIKey</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">apitest.apibasis.NeoFeedTest#verifyUsingValidStartDateAndEndDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">apitest.apibasis.NeoFeedTest#verifyWithoutAPIKey</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">apitest.apibasis.NeoFeedTest#verifyWithoutEndDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">apitest.apibasis.NeoFeedTest#verifyWithoutStartDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">apitest.apibasis.NeoFeedTest#verifyWithoutStartDateAndEndDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

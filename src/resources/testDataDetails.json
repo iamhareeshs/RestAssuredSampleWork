@@ -1,0 +1,12 @@
+[
+  {
+    "startDate": "2021-12-05",
+    "endDate": "2021-12-06",
+    "fileName": "expectedResponseObjects1.json"
+  },
+  {
+    "startDate": "2022-01-01",
+    "endDate": "2022-01-07",
+    "fileName": "expectedResponseObjects2.json"
+  }
+]

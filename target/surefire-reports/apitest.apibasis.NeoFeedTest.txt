@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: apitest.apibasis.NeoFeedTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 17.399 s <<< FAILURE! - in apitest.apibasis.NeoFeedTest
+verifyInvalidDateFormat(apitest.apibasis.NeoFeedTest)  Time elapsed: 1.66 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+JSON path error_message doesn't match.
+Expected: Date Format Exception - Expected format (yyyy-mm-dd) - Invalid_Date_Format - Unparseable date: \"Invalid_Date_Format\"
+  Actual: Date Format Exception - Expected format (yyyy-mm-dd) - Invalid_Date_Format
+
+	at apitest.apibasis.NeoFeedTest.verifyInvalidDateFormat(NeoFeedTest.java:70)
+
+verifyUsingValidTestDetails(apitest.apibasis.NeoFeedTest)  Time elapsed: 1.287 s  <<< FAILURE!
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.time.LocalDate.year accessible: module java.base does not "opens java.time" to unnamed module @58ceff1
+	at apitest.apibasis.NeoFeedTest.verifyUsingValidTestDetails(NeoFeedTest.java:116)
+
+verifyUsingValidTestDetails(apitest.apibasis.NeoFeedTest)  Time elapsed: 1.792 s  <<< FAILURE!
+java.lang.reflect.InaccessibleObjectException: Unable to make field private final int java.time.LocalDate.year accessible: module java.base does not "opens java.time" to unnamed module @58ceff1
+	at apitest.apibasis.NeoFeedTest.verifyUsingValidTestDetails(NeoFeedTest.java:116)
+
